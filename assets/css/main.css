@@ -2413,6 +2413,7 @@ input[type="submit"].special, input[type="reset"].special, input[type="button"].
     background-color: #11AAFF;
     box-shadow: none;
     color: #ffffff !important;
+    padding: 0 10px 0 10px;
 }
 
 input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover, .button.special:hover {
