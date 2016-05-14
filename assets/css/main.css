@@ -2960,7 +2960,7 @@ body.landing #header {
 #sensei_tutors {
     width: 100%;
     position: absolute;
-    padding-top: 10%;
+    padding-top: 20%!important;
     text-align: center;
     z-index: 1;
     color: white;
