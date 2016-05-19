@@ -103,7 +103,7 @@ body {
 	z-index: 2;
 	/* for firefox 31 */
 	top: 480px;
-    background-color: rgba(28, 29, 38, 0.8);
+    background-color: rgba(28, 29, 38, 0.9);
 }
 
 /* back, initially hidden pane */
