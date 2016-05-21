@@ -22,6 +22,17 @@
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!-- Google Analytics -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-78117153-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
     </head>
     <body class="landing">
         <div id="page-wrapper">
@@ -183,16 +194,16 @@
                                         			<span class="icon alt major fa-check">
                                                     </span>
                                                     <h3>
-                                                        Flexible Hours
+                                                        Work Remotely with Flexible Hours
                                                     </h3>
                                         		</div>
                                           <div class="overlayer">
                                         		<div class="over">
                                         		    <h3>
-                                                        Flexible Hours
+                                                        Work Remotely with Flexible Hours
                                                     </h3>
                                         			<p>
-                                                        Work any time anywhere.
+                                                        Tutors can work from any location at any time of the day, full or part-time - work when it is convenient for you!
                                                     </p>
                                         		</div>
                                         	</div>
@@ -211,7 +222,7 @@
                                                         Competitive Pay
                                                     </h3>
                                         			<p>
-                                                       Filling the untap tutor market.
+                                                        Depending on the subject and experience, tutors set their own price.
                                                     </p>
                                         		</div>
                                         	</div>
@@ -230,7 +241,7 @@
                                                         Build a Network
                                                     </h3>
                                         			<p>
-                                                        Build a Network of Educators and Students!
+                                                        We handle the marketing and payment for you. All you have to do is teach what you love!
                                                     </p>
                                         		</div>
                                         	</div>
@@ -389,7 +400,7 @@
             
             <!-- Five -->
             <section class="wrapper style2 special" id="five">
-                <div class="container">
+                <div class="container" id="thank-you-message">
                     <header>
                         <h2>
                             Subscribe to Sensei!
@@ -398,7 +409,7 @@
                             We are now developing Sensei Tutors. Signup to get latest news from us!
                         </p>
                     </header>
-                    <form action="https://formspree.io/lokyinchan@gmail.com" enctype="text/plain" method="post" style="">
+                    <form id="email-form" method="POST">
                         <div class="8u 12u$(xsmall)">
                             <input name="first_name" placeholder="Your First Name" type="text"/>
                         </div>
@@ -419,6 +430,7 @@
                                 <input id="country" name="country" placeholder="Country You Live in?" type="text"/>
                                 <p>So we know which time zone you are in.</p>
                             </div>
+                            <input type="hidden" name="_next" value="/Hill-Sensei/left-sidebar.html" />
                             <br>
                                 <!--<select class="field-select 8u 12u$(xsmall)" name="subject">-->
                                 <!--    <option value="professional tutor">-->
@@ -488,6 +500,7 @@
         </script>
         <script src="assets/js/jquery.scrollex.min.js">
         </script>
+        <script type="text/javascript" src="assets/js/email.js"></script>
         <script src="assets/js/skel.min.js">
         </script>
         <script src="assets/js/util.js">
