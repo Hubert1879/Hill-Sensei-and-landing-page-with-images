@@ -1936,12 +1936,13 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     display: none;
 }
 
-input[type="text"], input[type="password"], input[type="email"], select {
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], select {
     height: 3em;
 }
 
 textarea {
-    padding: 0.75em 1em;
+    padding: 0.7em 1em;
+    height: 200px;
 }
 
 select option {
