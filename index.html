@@ -21,6 +21,7 @@
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/custom.css" rel="stylesheet" />
     <link href="assets/css/accordion.css" rel="stylesheet" />
+    <!--<link href="assets/css/checkbox.css" rel="stylesheet" />-->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -461,7 +462,21 @@
                     </div>
                     <br>
                     <div class="8u 12u$(xsmall)">
-                        <input id="country" name="country" placeholder="Country You Live in?" type="text" />
+                        <select name="i-am-a" form="email-form">
+                          <option value="" disabled selected>I am a ...</option>
+                          <option value="tutor">Tutor</option>
+                          <option value="student">Student</option>
+                          <option value="parents">Parents</option>
+                          <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="8u 12u$(xsmall)">
+                        <input id="subject" name="subject" placeholder="Subject You Are Interested in" type="text" />
+                    </div>
+                    <br>
+                    <div class="8u 12u$(xsmall)">
+                        <input id="country" name="country" placeholder="Country You Live in" type="text" />
                         <p>So we know which time zone you are in.</p>
                     </div>
                     <input type="hidden" name="_next" value="/Hill-Sensei/left-sidebar.html" />
@@ -496,8 +511,12 @@
                         <textarea name="message" placeholder="Your Message" type="text"></textarea>
                     </div>
                     <br>
-                    <div class="4u$ 12u$(xsmall)">
+                    
+                    <div class="4u$ 12u$(xsmall)" id="checkbox">
+                        <input type="checkbox" id="c1" name="survey" />
+                        <label for="c1"><span></span>Would You Mind Filling Out a Short Survey?</label>
                     </div>
+                    <br/>
                     <div class="4u$ 12u$(xsmall)">
                         <input class="fit special" type="submit" value="Contact Now" />
                     </div>
