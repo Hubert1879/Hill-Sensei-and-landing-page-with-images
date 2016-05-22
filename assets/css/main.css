@@ -62,6 +62,56 @@ body {
 }
 
 
+/* Overlay */
+
+/* entire container, keeps perspective */
+.overlay-container {
+  perspective: 1000px;
+  overflow-y: hidden;
+  margin: 0!important;
+  padding: 0!important;
+}
+	/* flip the pane when hovered */
+	.overlay-container:hover .overlayer, .overlay-container.hover .overlayer {
+		transform: translateY(-480px);
+	}
+
+.overlay-container, .under, .over {
+	width: 100%;
+	min-height: 300px;
+}
+
+/* flip speed goes here */
+.overlayer {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.over, .under {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	
+}
+
+/* front pane, placed above back */
+.over {
+	z-index: 2;
+	/* for firefox 31 */
+	top: 480px;
+    background-color: rgba(28, 29, 38, 0.9);
+}
+
+/* back, initially hidden pane */
+.under {
+  /*background-color: green;*/
+}
+
+
 /* Box Model */
 
 *, *:before, *:after {
@@ -2980,7 +3030,7 @@ body.landing #header {
     background-position: center center;
     background-size: cover;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-    min-height: 100vh;
+    min-height: 500px;
     position: relative;
     text-align: center;
     z-index: 21;
