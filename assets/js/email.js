@@ -24,6 +24,7 @@ $(document).ready(function(){
                 data: dataObject,
                 dataType: "json",
                 success: function(data){
+                	console.log(data);
                 	$('#thank-you-message').html('<h1 style="font-size: 3em;">Thank You for Your Interest!</h1><h3>We Will Get Back to You within Next 24 Hours<h3>')
                 },
                 error: function(err){
