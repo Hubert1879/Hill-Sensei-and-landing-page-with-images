@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
+.strip {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clock {
+  width: 10vw;
+  margin: auto;
+}
+
+.label {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.5vw;
+  top: -0.5em;
+  margin-left: -0.5em;
+}
+
+.number, .label, .clock {
+  font-family: 'Roboto Condensed'!important;
+  color: white;
+  display: inline-block;
+}
+
+.number {
+  font-size: 3.5vw!important;
+}
+
+@media screen and (max-width: 736px) {
+    .number {
+      font-size: 7.5vw!important;
+    }
+    .label {
+      font-size: 2.75vw!important;
+    }
+    .clock {
+      width: 15vw!important;
+      margin: auto;
+    }
+}
+
