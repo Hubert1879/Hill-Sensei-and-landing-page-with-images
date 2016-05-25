@@ -4,18 +4,17 @@
   position: relative;
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .clock {
-  width: 10vw;
+  width: 13vh;
   margin: auto;
 }
 
 .label {
   position: absolute;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 2vh;
   top: -0.5em;
   margin-left: -0.5em;
 }
@@ -27,18 +26,18 @@
 }
 
 .number {
-  font-size: 3.5vw!important;
+  font-size: 5vh!important;
 }
 
 @media screen and (max-width: 736px) {
     .number {
-      font-size: 7.5vw!important;
+      font-size: 4.5vh!important;
     }
     .label {
-      font-size: 2.75vw!important;
+      font-size: 1.75vh!important;
     }
     .clock {
-      width: 15vw!important;
+      width: 10vh!important;
       margin: auto;
     }
 }

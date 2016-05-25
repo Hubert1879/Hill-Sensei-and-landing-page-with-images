@@ -19,7 +19,7 @@ $(document).ready(function(){
 	        }
 	        console.log(dataObject);
 	        $.ajax({
-                url: "https://formspree.io/kirill.novik.csci@gmail.com", 
+                url: "https://formspree.io/lokyinchan@gmail.com", 
                 method: "POST",
                 data: dataObject,
                 dataType: "json",

@@ -11,6 +11,7 @@
         Sensei Tutors
     </title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="image_src" href="images/favicon.png"/>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -134,32 +135,33 @@
         <!-- Banner -->
         <section>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <div id="sensei_tutors">
-                    <h1>Sensei Tutors</h1>
-                    <h2>Flexible hours, work wherever, whenever you want!</h2>
-                    <br><br>
-                    <h3>Coming Soon!</h3>
-                    <div class="strip">
-                      <div class="clock" id="days">
-                        <div class="number">1</div>
-                        <div class="label">DAYS</div>
-                      </div>
-                      <div class="clock" id="hours">
-                        <div class="number">1</div>
-                        <div class="label">HRS</div>
-                      </div>
-                      <div class="clock" id="minutes">
-                        <div class="number">1</div>
-                        <div class="label">MIN</div>
-                      </div>
-                      <div class="clock" id="seconds">
-                        <div class="number">1</div>
-                        <div class="label">SEC</div>
-                      </div>
+                <div id="sensei_tutors_container">
+                    <div id="sensei_tutors">
+                        <h1>Sensei Tutors</h1>
+                        <h2>Flexible hours, work wherever, whenever you want!</h2>
+                        <h3>Coming Soon!</h3>
+                        <div class="strip">
+                          <div class="clock" id="days">
+                            <div class="number">1</div>
+                            <div class="label">DAYS</div>
+                          </div>
+                          <div class="clock" id="hours">
+                            <div class="number">1</div>
+                            <div class="label">HRS</div>
+                          </div>
+                          <div class="clock" id="minutes">
+                            <div class="number">1</div>
+                            <div class="label">MIN</div>
+                          </div>
+                          <div class="clock" id="seconds">
+                            <div class="number">1</div>
+                            <div class="label">SEC</div>
+                          </div>
+                        </div>
+                        <a class="button special" id="apply-now" href="#five">Apply Now!</a>
                     </div>
-                    <br><br>
-                    <a class="button special" id="apply-now" href="#five">Apply Now!</a>
                 </div>
+                
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -551,20 +553,71 @@
         </section>
     </div>
     <!-- Footer -->
-    <footer id="footer">
-
-        <ul class="copyright">
-            <li>
-                © The Sensei Inc. All rights reserved.
-            </li>
-            <li>
-                Design:
-                <a href="http://html5up.net">
+        <footer id="footer">
+            <ul class="icons">
+                <li>
+                    <a class="icon alt fa-google" onclick="window.open('https://plus.google.com/share?url=http%3A%2F%2Fsenseionlinetutor.com%2F','name','width=600,height=400')">
+                        <span class="label">
+                            LinkedIn
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon alt fa-twitter" onclick="window.open('https://twitter.com/intent/tweet?url=http%3A%2F%2Fsenseionlinetutor.com%2F&text=Sensei+Tutors&hashtags=tutoring,job','Twitter','width=600,height=400')">
+                        <span class="label">
+                            Twitter
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon alt fa-facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsenseionlinetutor.com%2F','Facebook','width=600,height=400')">
+                        <span class="label">
+                            Facebook
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon alt fa-linkedin" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fsenseionlinetutor.com%2F&title=Sensei+Tutors','name','width=600,height=400')">
+                        <span class="label">
+                            LinkedIn
+                        </span>
+                    </a>
+                </li>
+                
+                <!--<li>-->
+                <!--    <a class="icon alt fa-instagram" href="#">-->
+                <!--        <span class="label">-->
+                <!--            Instagram-->
+                <!--        </span>-->
+                <!--    </a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--    <a class="icon alt fa-github" href="#">-->
+                <!--        <span class="label">-->
+                <!--            GitHub-->
+                <!--        </span>-->
+                <!--    </a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--    <a class="icon alt fa-envelope" href="#">-->
+                <!--        <span class="label">-->
+                <!--            Email-->
+                <!--        </span>-->
+                <!--    </a>-->
+                <!--</li>-->
+            </ul>
+            <ul class="copyright">
+                <li>
+                    © The Sensei Inc. All rights reserved.
+                </li>
+                <li>
+                    Design:
+                    <a href="http://html5up.net">
                         HTML5 UP
                     </a>
-            </li>
-        </ul>
-    </footer>
+                </li>
+            </ul>
+        </footer>
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js">
     </script>

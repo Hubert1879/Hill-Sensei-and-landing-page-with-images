@@ -151,6 +151,9 @@ body {
 }
 
 @media screen and (max-width: 1680px) {
+    #sensei_tutors {
+        top: 20vh!important;
+    }
     .container.\31 25\25 {
         width: 100%;
         
@@ -170,6 +173,9 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
+    #sensei_tutors {
+        top: 20vh!important;
+    }
     .container.\31 25\25 {
         width: 100%;
         max-width: 112.5%;
@@ -190,6 +196,22 @@ body {
 }
 
 @media screen and (max-width: 980px) {
+    #sensei_tutors {
+        top: 10vh!important;
+    }
+    
+    #sensei_tutors h1 {
+        font-size: 4vh!important;
+    }
+    
+    #sensei_tutors h2 {
+        font-size: 2vh!important;
+    }
+    
+    #sensei_tutors h3 {
+        font-size: 3vh!important;
+    }
+    
     .container.\31 25\25 {
         width: 100%;
         max-width: 125%;
@@ -210,6 +232,25 @@ body {
 }
 
 @media screen and (max-width: 736px) {
+    
+    /* Sensei Tutors Banner Heading Sizes */
+    #sensei_tutors {
+        width: 100%!important;
+        top: 20vh!important;
+    }
+    
+    #sensei_tutors h1 {
+        font-size: 4vh!important;
+    }
+    
+    #sensei_tutors h2 {
+        font-size: 2vh!important;
+    }
+    
+    #sensei_tutors h3 {
+        font-size: 3vh!important;
+    }
+    
     .container.\31 25\25 {
         width: 100%;
         max-width: 125%;
@@ -230,6 +271,24 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    /* Sensei Tutors Banner Heading Sizes */
+    #sensei_tutors {
+        width: 100%!important;
+        top: 20vh!important;
+    }
+    
+    #sensei_tutors h1 {
+        font-size: 5vh!important;
+    }
+    
+    #sensei_tutors h2 {
+        font-size: 3vh!important;
+    }
+    
+    #sensei_tutors h3 {
+        font-size: 3vh!important;
+    }
+    
     .container.\31 25\25 {
         width: 100%;
         max-width: 125%;
@@ -3011,29 +3070,38 @@ body.landing #header {
     z-index: 100!important;
 }
 
-
-
-#sensei_tutors {
-    width: 100%;
-    position: absolute;
-    padding-top: 15vh!important;
-    text-align: center;
-    z-index: 1;
-    color: white;
+#sensei_tutors_container {
     background-color: rgba(0, 0, 0, 0.5)!important;
     height: 100%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+#sensei_tutors {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 10vh;
+    z-index: 1;
+    color: white;
+    height: 100%;
+    width: 70vh;
 }
 
 #sensei_tutors h1 {
-    font-size: 5em;
+    font-size: 10vh;
     font-weight: bold;
     margin: 0;
 }
 
+#sensei_tutors h2 {
+    font-size: 3vh;
+}
+
 #sensei_tutors h3 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 30px;
+    font-size: 4vh;
 }
 
 #banner {
@@ -3088,7 +3156,8 @@ body.landing #header {
 }
 
 #apply-now {
-    font-size: 1.5em;
+    margin-top: 4.5vh;
+    font-size: 1.5vh;
 }
 
 #content-bottom {
@@ -3227,10 +3296,21 @@ body.is-touch #banner {
 #background-flights {
         background-image: url("../../images/background.jpg")!important;
     }
-
+    
+/* Short Window */
+@media screen and (max-height: 600px) {
+    .carousel-indicators {
+        display: none!important;
+    }
+}
+    
 /* XLarge */
 
 @media screen and (max-width: 6800px) {
+    #sensei_tutors {
+        top: 20vh;
+    }
+    
     .spotlight.bottom {
         height: 500px!important;
     }
