@@ -152,7 +152,7 @@ body {
 
 @media screen and (max-width: 1680px) {
     #sensei_tutors {
-        top: 20vh!important;
+        top: 15vh!important;
     }
     .container.\31 25\25 {
         width: 100%;
@@ -174,7 +174,7 @@ body {
 
 @media screen and (max-width: 1280px) {
     #sensei_tutors {
-        top: 20vh!important;
+        top: 10vh!important;
     }
     .container.\31 25\25 {
         width: 100%;
@@ -1923,7 +1923,11 @@ footer.major {
 /* Form */
 
 form {
-    margin: 0 0 2em 0;
+    margin: 0;
+}
+
+#thank-you-message {
+    padding: 0!important;
 }
 
 label {
@@ -2750,7 +2754,7 @@ form > div, form > select {
 }
 
 .spotlight.right {
-    height: 500px!important;
+    height: 500px;
 }
 
 .spotlight.left .content, .spotlight.right .content {
@@ -3156,8 +3160,8 @@ body.landing #header {
 }
 
 #apply-now {
-    margin-top: 4.5vh;
-    font-size: 1.5vh;
+    margin: 4.5vh 0 4.5vh 0;
+    font-size: 2.1vh;
 }
 
 #content-bottom {
@@ -3298,7 +3302,7 @@ body.is-touch #banner {
     }
     
 /* Short Window */
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 600px), (min-width: 980px) and (max-width: 1025px), (min-width: 730px) and (max-width: 850px) {
     .carousel-indicators {
         display: none!important;
     }
@@ -3312,7 +3316,7 @@ body.is-touch #banner {
     }
     
     .spotlight.bottom {
-        height: 500px!important;
+        height: 400px!important;
     }
     /* Basic */
     body, input, select, textarea {
@@ -3324,6 +3328,15 @@ body.is-touch #banner {
     }
     .spotlight.bottom .content {
         padding: 3.825em 0 2.95em 0;
+    }
+    #two > .content {
+        padding: 1.825em 0 2.95em 0;
+    }
+    #banner .content {
+        padding-bottom: 0!important;
+    }
+    .overlay-container, .under, .over {
+    	min-height: 200px;
     }
     .spotlight.left .content, .spotlight.right .content {
         padding: 4.5em 2.5em;
@@ -3614,7 +3627,7 @@ body.is-touch #banner {
     .item > img {
         height: 100vh!important;
         width: auto!important;
-        margin-left: -50%;
+        margin: auto;
         max-width: 1000%!important;
     }
     
