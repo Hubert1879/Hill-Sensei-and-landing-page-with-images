@@ -5,11 +5,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-
+<style>
+.video-wrapper video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+</style>
 <head>
     <title>
         Sensei Tutors
     </title>
+    
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="image_src" href="images/favicon.png"/>
     <meta charset="utf-8" />
@@ -172,7 +180,12 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="images/carousel/sensei01.jpg" alt="Image 001">
+                        <div class="video-wrapper">
+                            <video autoplay="" loop="" poster="" id="bgvid">
+                            
+                            <source src="assets/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
                         <!--<div class="carousel-caption">-->
                         <!--    <h3>Why You Should Join Us</h3>-->
                         <!--    <p>Sensei Tutors provide you the most wonderful tutoring community.</p>-->
@@ -469,13 +482,16 @@
                     </p>
                 </header>
                 <form id="email-form" method="POST">
-                    <div class="8u 12u$(xsmall)">
-                        <input name="first_name" placeholder="First Name" type="text" />
+                    <div class="">
+                        <div class="4u 12u$(xsmall)" style="display: inline-block;" >
+                            <input id="first-name" name="first_name" style="width: 98%" placeholder="First Name" type="text" />
+                        </div>
+                        
+                        <div class="4u 12u$(xsmall)" style="display: inline-block; " >
+                            <input id="last-name" name="last_name" style="" placeholder="Last Name" type="text" />
+                        </div>
                     </div>
-                    <br>
-                    <div class="8u 12u$(xsmall)">
-                        <input id="name" name="last_name" placeholder="Last Name" type="text" />
-                    </div>
+                    
                     <br>
                     <div class="8u 12u$(xsmall)">
                         <input id="email" name="_replyto" placeholder="Email Address" type="email" />
@@ -502,6 +518,19 @@
                     <div class="8u 12u$(xsmall)">
                         <input id="country" name="country" placeholder="Country You Live in" type="text" />
                         <p style="margin: 0;">So we know which time zone you are in.</p>
+                    </div>
+                    <div class="8u 12u$(xsmall)">
+                        <select name="availability" form="email-form">
+                          <option value="" disabled selected>If a Tutor, What is the Best Available Time?</option>
+                          <option value="not-a-tutor">Not a Tutor</option>
+                          <option value="early-morning">Early Morning</option>
+                          <option value="late-morning">Late Morning</option>
+                          <option value="early-afternoon">Early Afternoon</option>
+                          <option value="late-afternoon">Late Afternoon</option>
+                          <option value="evening">Evening</option>
+                          <option value="early-night">Early Night</option>
+                          <option value="late-night">Late Night</option>
+                        </select>
                     </div>
                     <input type="hidden" name="_next" value="/Hill-Sensei/left-sidebar.html" />
                     <br>
